@@ -55,7 +55,7 @@ Carga el dataset histórico, limpia los datos, calcula ventas totales por catego
 Guarda los resultados en las carpetas `output_batch_sales/` y `output_batch_windowed/`.
 
 ### 3. Procesamiento en Tiempo Real (Kafka + Spark Streaming)
-Iniciar ZooKeeper y Kafka (si no están corriendo)
+Iniciar el servidor ZooKeeper y el servidor Kafka (si no están corriendo)
 ```
 sudo /opt/Kafka/bin/zookeeper-server-start.sh /opt/Kafka/config/zookeeper.properties &   
 sudo /opt/Kafka/bin/kafka-server-start.sh /opt/Kafka/config/server.properties &
