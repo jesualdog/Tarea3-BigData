@@ -31,9 +31,16 @@ El objetivo es demostrar el uso combinado de batch + streaming, cumpliendo con e
 - Kafka y ZooKeeper ejecutándose
 - Dataset `retail_sales_dataset.csv` copiado en `/home/vboxuser/`
 
+**Pasos para descargar dataset**
+- En tu PC (navegador):  
+Ve a: https://www.kaggle.com/datasets/mohammadtalib786/retail-sales-dataset  
+Inicia sesión en tu cuenta de Kaggle.  
+Haz clic en el botón Download (se descargará retail_sales_dataset.csv).
+
 ## Instrucciones de Ejecución
 
 ### 1. Implementación en Spark (Ventas)
+
 Procesamiento en batch (código completo)  
 Crea el archivo `batch_retail_sales.py` en la VM con nano
 ```
@@ -89,5 +96,5 @@ Mientras cualquiera de los jobs esté corriendo, en este caso se accede a: `http
 
 ## Resultados Esperados
 
-**Batch:** Estadísticas de ventas totales por categoría, por hora y por ventana de tiempo.  
-**Streaming:** Ventas totales y cantidad de transacciones actualizadas cada minuto por categoría de producto (Electronics, Clothing, Beauty, etc.).
+- **Batch:** Estadísticas de ventas totales por categoría, por hora y por ventana de tiempo.  
+- **Streaming:** Ventas totales y cantidad de transacciones actualizadas cada minuto por categoría de producto (Electronics, Clothing, Beauty, etc.).
